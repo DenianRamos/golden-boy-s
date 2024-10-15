@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pV7BQz3gElym9jy1dp3bY50RO4PUnk2tC6Sdpx0gRFoGvW+fnNr8XxtxEuyFPCpITh81s+lT5YYh9S8+S3G6dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/validaForm.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="form.html"><i class="fas fa-edit"></i> Formulário</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Preencha o Formulário</h1>
+        <form id="meuFormulario" action="formAction.html" method="GET">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" max="120" required placeholder="Digite sua idade">
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Site desenvolvido pelos estudantes Denian Soares Ramos e Gustavo Carli.</p>
+    </footer>
+</body>
+</html>
